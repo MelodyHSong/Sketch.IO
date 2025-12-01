@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sketch.IO</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_choose_color">Choose Color</string>
+    <string name="next">Next</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+
+    <string name="action_color">Choose Color</string>
+    <string name="action_line_width">Line Width</string>
+    <string name="action_erase">Erase</string>
+    <string name="action_save">Save</string>
+    <string name="action_about">About</string>
+    <string name="action_more">More</string>
+    <string name="action_print">Print</string>
+
+    <string name="choose_color">Choose color</string>
+    <string name="set_line_width">Set Line Width</string>
+
+    <string name="confirm_action">Are you sure you want to proceed with this action?</string>
+    <string name="confirm_erase">Are you sure you want to erase the entire drawing?</string>
+    <string name="confirm_yes">Yes</string>
+    <string name="confirm_no">No</string>
+
+    <string name="color_black">Black</string>
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_white">White (Eraser)</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_cyan">Cyan</string>
+
+    <string name="permission_denied">Permission denied. Cannot save drawing.</string>
+    <string name="save_success">Drawing saved successfully to Gallery!</string>
+    <string name="save_error">Error saving drawing.</string>
+    <string name="print_unsupported">Printing is not supported on this device.</string>
+
+    <string name="about_text">Sketch.IO v1.1.0</string>
+    <string name="about_title">Developer Information</string>
+    <string name="about_developer_name">Alexis J. Benejan</string>
+    <string name="about_developer_role">Software Developer | UPR-Ponce</string>
+    <string name="about_ko_fi_label">Support</string>
+    <string name="about_github_label">View Code</string>
+    <string name="connect">Connect</string>
+
+    <string name="url_kofi">https://ko-fi.com/melodyhsong</string>
+    <string name="url_github">https://github.com/MelodyHSong/Sketch.IO</string>
+    <string name="choose_line_width">Choose Line Width</string>
+</resources>

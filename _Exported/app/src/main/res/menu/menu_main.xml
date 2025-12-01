@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_set_color"
+        android:icon="@drawable/ic_color_palette"
+        android:title="@string/action_color"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_set_line_width"
+        android:icon="@drawable/brush_size"
+        android:title="@string/action_line_width"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="@string/action_more"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/action_delete_drawing"
+                android:icon="@drawable/ic_delete"
+                android:title="@string/action_erase" />
+
+            <item
+                android:id="@+id/action_save"
+                android:icon="@drawable/ic_save"
+                android:title="@string/action_save" />
+
+            <item
+                android:id="@+id/action_print"
+                android:icon="@drawable/ic_print"
+                android:title="@string/action_print" />
+
+            <item
+                android:id="@+id/action_about"
+                android:title="@string/action_about" />
+        </menu>
+    </item>
+</menu>
