@@ -47,6 +47,7 @@
     <string name="connect">Conectar</string>
 
     <string name="url_kofi">https://ko-fi.com/melodyhsong</string>
-    <string name="url_github">https://github.com/melodyhsong</string>
+    <string name="url_github">https://github.com/MelodyHSong/Sketch.IO</string>
     <string name="choose_line_width">Elegir Ancho de Línea</string>
+
 </resources>
