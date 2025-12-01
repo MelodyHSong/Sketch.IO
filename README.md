@@ -30,9 +30,9 @@ This log tracks key feature additions and structural changes across the developm
 
 | Version | Date | Changes |
 | :--- | :--- | :--- |
+| **V1.1.3a** | 2025-11-30 | **Critical Theme & Save Fixes:** Fixed theme-compliance issues for all menu and button icons, changing their color to **Light Neon Pink** in both light and dark modes. Corrected `DrawingView.kt`'s `getDrawingBitmap()` logic to ensure the **white background** is captured properly when saving on physical devices. |
 | **V1.1.2a** | 2025-11-30 | Implemented external navigation links (**Ko-fi and GitHub**) in the About Activity screen. |
 | **V1.1.0a** | 2025-11-30 | **Final Feature Implementation & Code Standardization.** Completed all core assignment requirements, including the Print feature, modern saving logic (API 29+), nested menu structure, and finalized all custom dialogs. |
-
 ---
 
 ## ☆ Implemented Functionality & Features
