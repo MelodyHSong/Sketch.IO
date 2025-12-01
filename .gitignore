@@ -1,0 +1,59 @@
+# ☆ Compiled and Built Artifacts ☆
+####################################
+*.apk
+*.aab
+*.ap_
+*.jar
+*.class
+*.dex
+*.cached_smap
+*.iml
+
+# ☆ Gradle and Build Files ☆
+####################################
+# Gradle build directories
+/build/
+.gradle/
+.idea/libraries/
+.idea/modules.xml
+.idea/modules
+.idea/workspace.xml
+.idea/caches/
+.idea/codeStyles/
+
+# External native build files
+/.externalNativeBuild/
+
+# Local configuration file (for IDE settings and environment variables)
+local.properties
+/captures/
+/lint-results/
+/test-results/
+/bin/
+/out/
+/gen/
+/tmp/
+
+# Log Files
+*.log
+
+# ☆ Android Studio/IDE Specific Files ☆
+#########################################
+# Auto-generated project files (user-specific settings)
+.idea/
+.vscode/
+
+# Ignore all auto-generated manifest files
+**/intermediates/
+**/kapt/
+**/generated/
+
+# Maps and Signing (CRITICAL - DO NOT COMMIT KEYSTORE)
+#########################################
+# Ignore the keystore file that holds your release signature:
+# You must rename 'your_keystore_name.jks' to your actual file name (e.g., Keystore).
+**/*.jks
+**/*.keystore
+
+# Local C++ library files
+**/obj/
