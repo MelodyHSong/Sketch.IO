@@ -24,6 +24,17 @@ Here is a breakdown of the core files and folders you'll find in the `app/src/ma
 
 ---
 
+## ☆ Changelog
+
+This log tracks key feature additions and structural changes across the development cycles of the Sketch Application.
+
+| Version | Date | Changes |
+| :--- | :--- | :--- |
+| **V1.1.2a** | 2025-11-30 | Implemented external navigation links (**Ko-fi and GitHub**) in the About Activity screen. |
+| **V1.1.0a** | 2025-11-30 | **Final Feature Implementation & Code Standardization.** Completed all core assignment requirements, including the Print feature, modern saving logic (API 29+), nested menu structure, and finalized all custom dialogs. |
+
+---
+
 ## ☆ Implemented Functionality & Features
 
 The application fully implements the core requirements across the entire assignment (Parts I, II, & III):
