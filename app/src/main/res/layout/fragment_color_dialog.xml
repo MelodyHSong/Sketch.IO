@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/choose_color"
+        android:textAppearance="?attr/textAppearanceTitleLarge" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/colorBlack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@color/black"
+            android:contentDescription="@string/color_black"
+            android:tag="@color/black" />
+
+        <ImageButton
+            android:id="@+id/colorRed"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="#FF0000"
+            android:contentDescription="@string/color_red"
+            android:tag="#FF0000" />
+
+        <ImageButton
+            android:id="@+id/colorGreen"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="#00FF00"
+            android:contentDescription="@string/color_green"
+            android:tag="#00FF00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/colorBlue"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="#0000FF"
+            android:contentDescription="@string/color_blue"
+            android:tag="#0000FF" />
+
+        <ImageButton
+            android:id="@+id/colorYellow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="#FFFF00"
+            android:contentDescription="@string/color_yellow"
+            android:tag="#FFFF00" />
+
+        <ImageButton
+            android:id="@+id/colorWhite"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="@color/white"
+            android:contentDescription="@string/color_white"
+            android:tag="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/colorPurple"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="#9C27B0"
+            android:contentDescription="@string/color_purple"
+            android:tag="#9C27B0" />
+
+        <ImageButton
+            android:id="@+id/colorOrange"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="#FF9800"
+            android:contentDescription="@string/color_orange"
+            android:tag="#FF9800" />
+
+        <ImageButton
+            android:id="@+id/colorCyan"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="4dp"
+            android:background="#00BCD4"
+            android:contentDescription="@string/color_cyan"
+            android:tag="#00BCD4" />
+    </LinearLayout>
+</LinearLayout>
