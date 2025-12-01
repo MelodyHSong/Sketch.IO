@@ -117,7 +117,7 @@ class DrawingView @JvmOverloads constructor(
 
     /*
     ☆
-    ☆ Metodos requeridos por la aplicación
+    ☆ Metodos requeridos por la aplicación (según PDF)
     ☆
     */
 
@@ -135,11 +135,14 @@ class DrawingView @JvmOverloads constructor(
 
     /** Borra todo el contenido del lienzo. */
     fun clear() {
+        // Rellena el lienzo con un color transparente para borrar el contenido.
         drawCanvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR)
         invalidate()
     }
 
-    /** Devuelve el bitmap que contiene el dibujo actual. */
+    /** * Devuelve el bitmap que contiene el dibujo actual. (getDrawingBitmap() según PDF)
+     * FIX: Devuelve el canvasBitmap interno para mantener el fondo blanco.
+     */
     fun getDrawingBitmap(): Bitmap {
         return canvasBitmap
     }
