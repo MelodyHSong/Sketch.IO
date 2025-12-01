@@ -1,2 +1,71 @@
-# Sketch.IO
-A simple sketch app made for my mobile programming university course. 
+# ☆ Sketch.IO Mobile Codebase ☆
+
+> "I'm on a date with Kotlin now, baby~"
+
+Welcome to the internal source directory for **Sketch.IO**! This repository contains the complete source code for a robust Android mobile drawing application developed for the SICI 4185 course (Introducción a la Programación de Dispositivos Móviles).
+
+The application functions as a digital canvas, allowing users to draw freehand, customize brush settings (color and width), save their artwork using modern APIs, and print/erase the canvas.
+
+## ☆ What's Inside?
+
+Here is a breakdown of the core files and folders you'll find in the `app/src/main/` directory:
+
+| File/Folder | Purpose | Key Features |
+| :--- | :--- | :--- |
+| **`java/`** | **The Brains.** Contains all primary **Kotlin** logic files. | Implements drawing lifecycle, dialog communication, persistence, and printing. |
+| &nbsp;&nbsp;&nbsp;`MainActivity.kt` | **Activity Host.** Controls the main screen, manages the Toolbar setup, and handles permission delegation. | `saveDrawing()`, `setSupportActionBar()`. |
+| &nbsp;&nbsp;&nbsp;`MainActivityFragment.kt` | **Core Controller.** Initializes `DrawingView`, handles menu clicks, executes `saveDrawing()`, and uses the Fragment Result API. | `onMenuItemSelected()`, `setupConfirmationListener()`. |
+| &nbsp;&nbsp;&nbsp;`DrawingView.kt` | **Custom Canvas.** The core drawing surface. | `setBrushColor()`, `setBrushSize()`, `clear()`, `getDrawingBitmap()`. |
+| &nbsp;&nbsp;&nbsp;`AboutActivity.kt` | **Developer Info.** Displays specialized developer card and handles external link navigation (Ko-fi, GitHub). | `setupLinkListeners()`, `openUrl()`. |
+| &nbsp;&nbsp;&nbsp;`ConfirmationDialogFragment.kt` | **UX Manager.** Shows confirmation dialog before executing the erase action. | `newInstance()`, Fragment Result API. |
+| **`res/`** | **The Assets.** Contains all resources referenced by the code and layouts. | Divided into `layout/`, `values/`, `drawable/`, and `menu/`. |
+| &nbsp;&nbsp;&nbsp;`menu/` | **Toolbar Menu.** Defines the nested **"More"** menu structure for Save, Print, and Delete actions. | `action_more` nested menu structure. |
+| &nbsp;&nbsp;&nbsp;`values/` | **Strings & Colors.** Holds localization, theme colors, and custom colors (e.g., `about_background`). | `strings.xml`, `colors.xml`, `themes.xml`. |
+
+---
+
+## ☆ Implemented Functionality & Features
+
+The application fully implements the core requirements across the entire assignment (Parts I, II, & III):
+
+* **Drawing/Customization:** Full control over brush **Color** and **Width** using visually enhanced dialogs.
+* **Saving:** Implemented using modern **Android Q+ MediaStore API** for permission-less saving to the device's gallery.
+* **Printing:** Integrated using the **`androidx.print:print`** library (`PrintHelper`).
+* **UX/Safety:** **Confirmation dialog** is required before erasing the canvas.
+* **Structure:** Uses a `MaterialToolbar` and `Fragment Result API` for clean, modern communication.
+
+## ☆ Requirements
+
+To compile and run this mobile application, ensure your development environment is set up with:
+
+* **Android Studio** (Latest version recommended)
+* **Kotlin Development Kit (KDK)**
+* **Android SDK** (API 28+ required for `minSdk`)
+* **Dependencies:** `androidx.print:print:1.0.0` and Material Components.
+
+## ☆ Coding Style & Attribution
+
+All Kotlin code across my projects follows a specific stylish header and clean structure. Please keep these headers intact if you modify or redistribute the source files.
+
+Here is an example of the file header format:
+
+```kotlin
+/*
+☆
+☆ Author: ☆ MelodyHSong ☆
+☆ Language: Kotlin
+☆ File Name: Example.kt
+☆ Date: 2025-11-30
+☆
+*/
+```
+---
+
+## ☆ License
+
+This code is licensed under the **MIT License**!
+
+A credit to **MelodyHSong** is always appreciated.
+
+---
+*Kotlin, I love that. - MelodyHSong*
