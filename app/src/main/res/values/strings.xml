@@ -38,7 +38,7 @@
     <string name="save_error">Error saving drawing.</string>
     <string name="print_unsupported">Printing is not supported on this device.</string>
 
-    <string name="about_text">Sketch.IO v1.1.0</string>
+    <string name="about_text">Sketch.IO v1.0.0REL</string>
     <string name="about_title">Developer Information</string>
     <string name="about_developer_name">Alexis J. Benejan</string>
     <string name="about_developer_role">Software Developer | UPR-Ponce</string>

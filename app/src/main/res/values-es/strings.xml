@@ -38,7 +38,7 @@
     <string name="save_error">Error al guardar el dibujo.</string>
     <string name="print_unsupported">La impresión no es compatible en este dispositivo.</string>
 
-    <string name="about_text">Sketch.IO v1.1.0</string>
+    <string name="about_text">Sketch.IO v1.0.0REL</string>
     <string name="about_title">Información del Desarrollador</string>
     <string name="about_developer_name">Alexis J. Benejan</string>
     <string name="about_developer_role">Desarrollador de Software | UPR-Ponce</string>
