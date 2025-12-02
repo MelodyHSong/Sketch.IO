@@ -26,7 +26,9 @@ import com.alexis_benejan.sketchio.MainActivity
 import java.io.OutputStream
 import android.provider.MediaStore
 
-/** Fragmento principal que aloja [DrawingView] y gestiona las interacciones del usuario. */
+/**
+ * Fragmento principal que aloja [DrawingView] y gestiona las interacciones del usuario.
+ */
 class MainActivityFragment: Fragment(), MenuProvider {
 
     private var _binding: FragmentActivityMainBinding? = null
@@ -115,7 +117,11 @@ class MainActivityFragment: Fragment(), MenuProvider {
         }
     }
 
-    /** Metodo: saveDrawing (Guardado Moderno) */
+    /*
+    ☆
+    ☆ Metodo: saveDrawing (Guardado Moderno)
+    ☆
+    */
     private fun saveDrawing() {
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.P) {
             val bitmap: Bitmap = drawingView.getDrawingBitmap()
@@ -126,7 +132,9 @@ class MainActivityFragment: Fragment(), MenuProvider {
             val contentValues = ContentValues().apply {
                 put(MediaStore.MediaColumns.DISPLAY_NAME, filename)
                 put(MediaStore.MediaColumns.MIME_TYPE, "image/jpeg")
-                put(MediaStore.MediaColumns.RELATIVE_PATH, "Pictures/SketchApp")
+
+                // FIX: La carpeta de guardado cambia de "SketchApp" a "Sketch.IO"
+                put(MediaStore.MediaColumns.RELATIVE_PATH, "Pictures/Sketch.IO")
             }
 
             val imageUri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
@@ -144,7 +152,11 @@ class MainActivityFragment: Fragment(), MenuProvider {
         }
     }
 
-    /** Metodo: printDrawing (Impresión con PrintHelper) */
+    /*
+    ☆
+    ☆ Metodo: printDrawing (Impresión con PrintHelper)
+    ☆
+    */
     private fun printDrawing() {
         if (PrintHelper.systemSupportsPrint()) {
             activity?.also { context ->

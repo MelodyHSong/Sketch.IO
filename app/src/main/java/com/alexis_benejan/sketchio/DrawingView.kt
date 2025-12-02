@@ -62,7 +62,7 @@ class DrawingView @JvmOverloads constructor(
         if (::canvasBitmap.isInitialized) canvasBitmap.recycle()
         canvasBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888)
         drawCanvas = Canvas(canvasBitmap)
-        drawCanvas.drawColor(Color.WHITE)
+        drawCanvas.drawColor(Color.WHITE) // Initialize with white background
     }
 
     override fun onDraw(canvas: Canvas) {
@@ -133,16 +133,19 @@ class DrawingView @JvmOverloads constructor(
         drawPaint.strokeWidth = brushSize
     }
 
-    /** Borra todo el contenido del lienzo. */
+    /** Borra todo el contenido del lienzo. (clear() según PDF) */
     fun clear() {
-        // Rellena el lienzo con un color transparente para borrar el contenido.
+        // 1. Rellena el lienzo con un color transparente para borrar los trazos.
         drawCanvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR)
+
+        // 2. FUNDAMENTAL FIX: Vuelve a dibujar el fondo BLANCO SÓLIDO.
+        // Esto garantiza que el canvasBitmap tiene una capa de fondo blanca para el guardado.
+        drawCanvas.drawColor(Color.WHITE)
+
         invalidate()
     }
 
-    /** * Devuelve el bitmap que contiene el dibujo actual. (getDrawingBitmap() según PDF)
-     * FIX: Devuelve el canvasBitmap interno para mantener el fondo blanco.
-     */
+    /** Devuelve el bitmap que contiene el dibujo actual. */
     fun getDrawingBitmap(): Bitmap {
         return canvasBitmap
     }
