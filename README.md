@@ -30,10 +30,11 @@ This log tracks key feature additions and structural changes across the developm
 
 | Version | Date | Changes |
 | :--- | :--- | :--- |
-| **V1.1.3a** | 2025-11-30 | **Critical Theme & Save Fixes:** Fixed theme-compliance issues for all menu and button icons, changing their color to **Light Neon Pink** in both light and dark modes. Corrected `DrawingView.kt`'s `getDrawingBitmap()` logic to ensure the **white background** is captured properly when saving on physical devices. |
-| **V1.1.2a** | 2025-11-30 | Implemented external navigation links (**Ko-fi and GitHub**) in the About Activity screen. |
-| **V1.1.0a** | 2025-11-30 | **Final Feature Implementation & Code Standardization.** Completed all core assignment requirements, including the Print feature, modern saving logic (API 29+), nested menu structure, and finalized all custom dialogs. |
----
+| **V1.0.0r** | 2025-12-01 | **Production Release & Finalization.** Codebase is fully complete, all PDF requirements fulfilled, and application stability verified across devices. Includes all previous feature enhancements and critical fixes for cross-device saving. |
+| **V1.1.4a** | 2025-12-01 | *Superseded by V1.0.0r.* Solved the critical black background saving bug; planned for rotation support enhancement. |
+| **V1.1.3a** | 2025-11-30 | **Critical Theme & Save Fixes:** Fixed theme-compliance issues for all menu and button icons, changing their color to Light Neon Pink. Corrected `DrawingView.kt`'s save logic to ensure the white background is captured properly on physical devices. |
+| **V1.1.2a** | 2025-11-30 | Implemented external navigation links (Ko-fi and GitHub) in the About Activity screen. |
+| **V1.1.0a** | 2025-11-30 | **Initial Feature Implementation & Code Standardization.** Completed all core assignment requirements, including the Print feature, modern saving logic (API 29+), nested menu structure, and finalized all custom dialogs. |
 
 ## ☆ Implemented Functionality & Features
 
